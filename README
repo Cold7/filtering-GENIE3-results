@@ -1,0 +1,15 @@
+Script for filtering GENIE3 results. For each target gene, it compute the best scores (for example the best 10%) of TFs that direct it expression.
+
+       [-h] -i INPUT [-p PERCENTAGE] [-o OUTPUT] [-n NPROC]
+
+options:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        Route to the geanie3 result file (with format TF
+                        target score)
+  -p PERCENTAGE, --percentage PERCENTAGE
+                        Percentage of best results to extract. Default: 0.1
+  -o OUTPUT, --output OUTPUT
+                        Output path to save results
+  -n NPROC, --nproc NPROC
+                        Number of processors to use. Default: 1
