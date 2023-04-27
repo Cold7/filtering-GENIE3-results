@@ -20,7 +20,7 @@ if __name__ == "__main__":
 	
 	#arguments of the script
 	parser = argparse.ArgumentParser("Script for filtering GENIE3 results. For each target gene, it compute the best scores (for example the best 10%) of TFs that direct it expression.\n")
-	parser.add_argument("-i", "--input", help="Route to the geanie3 result file (with format TF\ttarget\tscore)", required=True)
+	parser.add_argument("-i", "--input", help="Path to the GENIE3 result file (with format TF\ttarget\tscore)", required=True)
 	parser.add_argument("-p","--percentage",help="Percentage of best results to extract. Default: 0.1", default=0.1, type=float)
 	parser.add_argument("-o","--output", help="Output path to save results", default = "./genie3_filtered.tsv")
 	parser.add_argument("-n","--nproc",help="Number of processors to use. Default: 1", default=1, type=int)
